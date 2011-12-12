@@ -29,6 +29,7 @@ main ( int argc, char *argv[] )
         fprintf (stderr, "Failed to read file.\n");
         return EXIT_FAILURE;
     }
+    setbuf(fp, NULL);
     char buf[100];
     while (1) {
         rewind(fp);
